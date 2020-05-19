@@ -78,7 +78,7 @@ body {
   padding-bottom: 40px;
 }
 
-.expound-section-align-left {
+.expound-section-left {
   display: inline-block;
   width: 234px;
   height: 506px;
@@ -87,7 +87,7 @@ body {
   padding: 67px 0px;
 }
 
-.expound-item-name {
+.expound-name {
   font-size: 14px;
   font-weight: 600;
   color: rgba(37, 34, 34, 1);
@@ -95,7 +95,7 @@ body {
   padding-top: 15px;
 }
 
-.expound-item-text {
+.expound-info {
   font-size: 14px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
@@ -104,7 +104,7 @@ body {
   padding: 40px 0px;
 }
 
-.expound-item-align-right {
+.expound-section-right {
   display: inline-block;
   width: 900px;
   height: 506px;
@@ -173,8 +173,11 @@ body {
   margin-top: 20px;
   position: relative;
 }
-
-.course-new {
+.course-item-img{
+  width: 295px;
+  height: 170px;
+}
+.course-tag_new {
   width: 44px;
   height: 26px;
   background: rgba(15, 199, 0, 1);
@@ -190,13 +193,13 @@ body {
   top: 0px;
 }
 
-.course-rank {
+.course-tag_level {
   position: absolute;
   top: 0px;
   right: 10px;
 }
 
-.course-tag {
+.course-tag_claim {
   width: 68px;
   height: 26px;
   font-size: 12px;
@@ -212,11 +215,11 @@ body {
   top: 134px;
 }
 
-.course-tag:hover {
+.course-tag_claim:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 
-.course-tag-two {
+.course-tag_claim-two {
   left: 99px;
 }
 
@@ -236,7 +239,7 @@ body {
   }
 }
 
-.course-item-text {
+.course-item-title {
   width: 246px;
   font-size: 20px;
   font-weight: 600;
@@ -246,7 +249,7 @@ body {
   margin-left: 25px;
 }
 
-.course-item-subtext {
+.course-item-subtitle {
   width: 244px;
   font-size: 14px;
   font-family: PingFangSC-Regular, PingFang SC;
@@ -257,17 +260,24 @@ body {
   margin-left: 25px;
 }
 
-.course-note-container {
+.course-item-info {
   margin-top: 12px;
   margin-left: 25px;
   display: flex;
   align-items: center;
 }
 
-.icon-time {
-  width: 16px;
-  height: 16px;
+.have-icon::before{
+  content: "";
+  display: block;
+  float: left;
   margin-right: 8px;
+  background: url(./../images/microsoft/time.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  width: 16px;
+  height: 20px;
 }
 
 .course-dash {
@@ -287,31 +297,31 @@ body {
   margin-right: 8px;
 }
 
-.lecturer-section {
+.teacher-section {
   background: rgba(245, 245, 245, 1);
 }
 
-.lecturer-container {
+.teacher-container {
   width: 1240px;
   margin: 0 auto;
   padding-bottom: 60px;
   position: relative;
 }
 
-.lecturer-title {
+.teacher-title {
   font-size: 26px;
   font-weight: 600;
   color: rgba(51, 51, 51, 1);
   line-height: 37px;
 }
 
-.lecturer-list {
+.teacher-list {
   display: flex;
   justify-content: space-between;
   padding-top: 17px;
 }
 
-.lecturer-item {
+.teacher-item {
   width: 241px;
   height: 300px;
   background: rgba(255, 255, 255, 1);
@@ -319,7 +329,7 @@ body {
   padding: 40px 0px;
 }
 
-.lecturer-name {
+.teacher-item-name {
   font-size: 20px;
   font-weight: 600;
   color: rgba(51, 51, 51, 1);
@@ -327,7 +337,7 @@ body {
   margin: 20px 0px 10px 0px;
 }
 
-.lecturer-text {
+.teacher-item-info {
   font-size: 16px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
@@ -346,15 +356,15 @@ body {
   padding: 59px 0px;
 }
 
-.statement-item,
-.invitation-item {
+.statement-content,
+.invitation-content {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.statement-text-container,
-.invitation-text-container {
+.statement-section-right,
+.invitation-section-right {
   width: 990px;
   height: 91px;
   display: flex;
@@ -363,8 +373,8 @@ body {
   margin-left: 24px;
 }
 
-.statement-text,
-.invitation-text {
+.statement-info,
+.invitation-info {
   font-size: 26px;
   font-weight: 600;
   color: rgba(51, 51, 51, 1);
@@ -378,8 +388,8 @@ body {
   background-color: #979797;
 }
 
-.statement-subtext,
-.invitation-subtext {
+.statement-sub-info,
+.invitation-sub-info {
   font-size: 13px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
@@ -387,7 +397,7 @@ body {
   line-height: 18px;
 }
 
-.lecturer-icon-left {
+.teacher-icon-left {
   padding: 15px 0px;
   width: 44px;
   height: 44px;
@@ -398,7 +408,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
-.lecturer-icon-right {
+.teacher-icon-right {
   padding: 15px 0px;
   width: 44px;
   height: 44px;
